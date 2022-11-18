@@ -1,6 +1,17 @@
 
 ---
-const pageTitle = "About me"
+const pageTitle = "About me";
+
+const identity = {
+    firstName: "Nathan",
+    country: "USA",
+    occupation: "Graduate Student Researcher", 
+    hobbies: ["drones", "electronics", "3D Printing", "coding", "climbing", "camping", "hiking"],
+};
+const skills = ["Python", "HTML", "CSS", "Astro", "Technical Writing"];
+const happy = true;
+const finished = false;
+const goal = 3;
 ---
 
 <html lang="en">
@@ -18,5 +29,22 @@ const pageTitle = "About me"
         <h1>{pageTitle}</h1>
         <p> I am currently working through Astro's intro tutorial and trying to learn how to make my own website. I enjoy tinkering with all sorts of things like drones and 3D printers. I am currently enrolled in a PhD program studying Geochemistry. This site is a repository of my learning, frustrations and knoweledge I gain along the way. </p>
         <p>This site will update as I complete the tutorial</p>
+        <p>Here are a few facts about me:</p>
+<ul>
+  <li>My name is {identity.firstName}.</li>
+  <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
+  {identity.hobbies.length >= 2 && 
+    <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
+  } 
+</ul>
+<p>My skills are:</p>
+<ul>
+  {skills.map((skill) => <li>{skill}</li>)}
+</ul>
+{happy && <p>I am happy to be learning Astro!</p>}
+
+{finished && <p>I finished this tutorial!</p>}
+
+{goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
 	</body>
 </html>
