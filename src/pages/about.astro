@@ -1,5 +1,7 @@
 
 ---
+import Navigation from '../components/Navigation.astro';
+import '../styles/global.css';
 const pageTitle = "About me";
 
 const identity = {
@@ -12,6 +14,9 @@ const skills = ["Python", "HTML", "CSS", "Astro", "Technical Writing"];
 const happy = true;
 const finished = false;
 const goal = 3;
+const skillColor = "navy";
+const fontWeight = "bold";
+const textCase = "uppercase"
 ---
 
 <html lang="en">
@@ -21,11 +26,21 @@ const goal = 3;
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
+        <style define:vars={{skillColor, fontWeight, textCase}}>
+            h1 {
+                color: purple;
+                font-size: 4rem;
+            }
+            .skill {
+                color: var(--skillColor);
+                font-weight: var(--fontWeight);
+                text-transform: var(--textCase)
+            }
+        </style>
+
 	</head>
 	<body>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/blog/">Blog</a>
+        <Navigation />
         <h1>{pageTitle}</h1>
         <p> I am currently working through Astro's intro tutorial and trying to learn how to make my own website. I enjoy tinkering with all sorts of things like drones and 3D printers. I am currently enrolled in a PhD program studying Geochemistry. This site is a repository of my learning, frustrations and knoweledge I gain along the way. </p>
         <p>This site will update as I complete the tutorial</p>
@@ -39,7 +54,7 @@ const goal = 3;
 </ul>
 <p>My skills are:</p>
 <ul>
-  {skills.map((skill) => <li>{skill}</li>)}
+  {skills.map((skill) => <li class="skill">{skill}</li>)}
 </ul>
 {happy && <p>I am happy to be learning Astro!</p>}
 
