@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: What I think of Astro so far
 author: Nathan Pulver
 description: My thoughts on Astro for making my first website

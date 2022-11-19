@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: Hosting an Astro website on Hostinger - Just don't
 author: Nathan Pulver
 description: Hosting an Astro website on Hostinger is not as simple as linking your github repo, but there are people to help.
