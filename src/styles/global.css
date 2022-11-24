@@ -1,5 +1,6 @@
 html {
   font-family: sans-serif;
+  background-color:#24273a;
 }
 
 body {
@@ -7,8 +8,12 @@ body {
   width: 100%;
   max-width: 80ch;
   padding: 1rem;
-  line-height: 1.5;
+  line-height: 1.5; 
+  background-color:#24273a;
+  color: #cad3f5;
 }
+
+
 
 * {
   box-sizing: border-box;
@@ -19,9 +24,6 @@ h1 {
   font-size: 2.5rem;
 }
 /* nav styles */
-header {
-    width: 100%;
-}
 .hamburger{
     padding-right: 20px;
     cursor: pointer;
@@ -40,9 +42,11 @@ header {
     background-color: #ff9776;
     display: none;
     margin: 0;
+    overflow: hidden;
 }
 
 .nav-links a {
+    float: left;
     display: block;
     text-align: center;
     padding: 10px;
@@ -50,10 +54,58 @@ header {
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
+    color:#f0c6c6;
 }
 
-.nav-links a:hover, a:focus {
+.dropdown:hover .dropbtn, .nav-links a:hover, a:focus {
     background-color: #363a4f;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  color: #f0c6c6;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}/* Add a red background color to navbar links on hover */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    background-color: #6e738d;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: #a6da95;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+h1 {
+    color: #8aadf4;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color:#ee99a0;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 .expanded {
     display: unset;
@@ -68,13 +120,14 @@ header {
 }
 
 .dark .nav-links a {
-  color: #fff;
+  color: #f5bde6;
 }
-.dark a:visited {
+/*.dark a:visited {
     color: #c6a0f6;
-}
-.dark .social {
+}*/
+.social {
     color: #1e2030;
+    text-align: center;
 }
 
 @media screen and (min-width: 636px) {

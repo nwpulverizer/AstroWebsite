@@ -1,8 +1,9 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Greeting from "../components/Greeting.jsx"
-const pageTitle = "A blog about my hobbies"
+const pageTitle = "Welcome to my blog"
 ---
 <BaseLayout pageTitle={pageTitle}>
-    <Greeting client:load messages = {["Hello", "Howdy", "How are ya", "Hey", "Hola", "Yo"]}/>
+    <Greeting client:load messages = {["Hello", "Howdy", "How are ya", "Hey", "Hola"]}/>
+    <p>This blog is about all the things I am interested in. I have a wide variety of hobbies from arduino and electronics to rock climbing and camping. Check out the about page to learn a bit more about me.</p>
 </BaseLayout>
