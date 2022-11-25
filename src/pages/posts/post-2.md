@@ -7,7 +7,7 @@ image:
     url: "https://astro.build/assets/blog/astro-showcase/astro-showcase-screenshot.jpg"
     alt: "Thumbnails of websites from the Astro Showcase site."
 pubDate: 2022-17-11
-tags: ["astro", "blogging", "learning in public", "website", "thoughts"]
+tags: ["astro", "blogging", "learning in public", "website", "thoughts","camping" ]
 ---
 I Have only done a few things with astro, but as a newcomer it has been extremely well thought out. 
 ## The install

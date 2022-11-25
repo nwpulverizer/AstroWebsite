@@ -43,6 +43,7 @@ h1 {
     display: none;
     margin: 0;
     overflow: hidden;
+   border-radius: 20px; 
 }
 
 .nav-links a {
@@ -55,6 +56,7 @@ h1 {
     font-weight: bold;
     text-transform: uppercase;
     color:#f0c6c6;
+   border-radius: 20px; 
 }
 
 .dropdown:hover .dropbtn, .nav-links a:hover, a:focus {
@@ -74,12 +76,14 @@ h1 {
   outline: none;
   color: #f0c6c6;
   padding: 14px 16px;
+  border-radius: 20px;
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
 }/* Add a red background color to navbar links on hover */
 .dropdown-content {
-    display: none;
+    display: none;  
+    border-radius: 20px;
     position: absolute;
     min-width: 160px;
     background-color: #6e738d;
@@ -93,6 +97,7 @@ h1 {
   text-decoration: none;
   display: block;
   text-align: left;
+    border-radius: 20px;
 }
 h1 {
     color: #8aadf4;
@@ -119,14 +124,8 @@ h1 {
   background-color:#24273a;
 }
 
-.dark .nav-links a {
-  color: #f5bde6;
-}
-/*.dark a:visited {
-    color: #c6a0f6;
-}*/
 .social {
-    color: #1e2030;
+    color: #b8c0e0;
     text-align: center;
 }
 
