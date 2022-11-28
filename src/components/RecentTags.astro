@@ -2,24 +2,29 @@
 const allPosts = await Astro.glob("../pages/posts/*.md");
 const {Chosentag} = Astro.props;
 ---
+<h2>Recent posts in {Chosentag}</h3>
 <div class ="tagcontainer">
-    <div class="chosentag">
     {allPosts.filter(post => post.frontmatter.tags.includes(Chosentag)).map(filteredpost =>(
+    <div class="tags">
         <a href={filteredpost.url}><h3>{filteredpost.frontmatter.title}</h3></a>
         <img src={filteredpost.frontmatter.image.url} alt={filteredpost.frontmatter.image.alt}>
+    </div>
+
     ))}
     </div>
-</div>
 <style>
+.tagcontainer {
+    display: flex;
+    flex-direction: columns;
+    }
 img {
-    width: 60%;
-    display: block;
-}
+    width: 70%;
+    }
 a {
-font-size: 20px;
-}
-a:visited{
-color: #cdd6f4;
-}
+    font-size: 18px;
+    }
+    a:visited{
+    color: #cdd6f4;
+    }
 
 </style>
