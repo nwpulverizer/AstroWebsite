@@ -2,7 +2,9 @@
 import BaseLayout from "./BaseLayout.astro";
 const {frontmatter} = Astro.props;
 ---
+
 <BaseLayout pageTitle={frontmatter.title}>
+<div class="md-content">
 <p>Published on: {frontmatter.pubDate.slice(0,10)}</p>
 <p>Written by {frontmatter.author}</p>
 <hr class=solid style="border-top: 3px solid" >
@@ -13,6 +15,7 @@ const {frontmatter} = Astro.props;
         <p class="tag"><a href=`/tags/${tag}`>{tag}</a></p>
         ))}
     </div>
+</div>
 </BaseLayout>
 <style>
   a {
@@ -28,11 +31,13 @@ const {frontmatter} = Astro.props;
 
   .tag {
     margin: 0.25em;
-    border: dotted 1px #a1a1a1;
     border-radius: .5em;
     padding: .5em 1em;
     font-size: 1.15em;
-    background-color: #a6da95;
+    background-color: #74c7ec;
 
+ .tag a:visited{
+    color: black;
+}
   }
 </style>
