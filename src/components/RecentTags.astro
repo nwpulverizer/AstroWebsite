@@ -7,7 +7,9 @@ const {Chosentag} = Astro.props;
     {allPosts.filter(post => post.frontmatter.tags.includes(Chosentag)).map(filteredpost =>(
     <div class="tags">
         <a href={filteredpost.url}><h3>{filteredpost.frontmatter.title}</h3></a>
-        <img src={filteredpost.frontmatter.image.url} alt={filteredpost.frontmatter.image.alt}>
+        <a href = {filteredpost.url}><img
+        src={filteredpost.frontmatter.image.url}
+        alt={filteredpost.frontmatter.image.alt}></a>
     </div>
 
     ))}
@@ -21,11 +23,12 @@ const {Chosentag} = Astro.props;
     display: flex;
     flex-direction: columns;
     flex-wrap: wrap-reverse;
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
     }
 img {
     max-width: 70%;
+    border-radius: 10%;
     }
 a {
     font-size: 1.04em;

@@ -1,23 +1,40 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
+import Comments from "../components/Comments.jsx"
 const {frontmatter} = Astro.props;
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
-<div class="md-content">
-<p>Published on: {frontmatter.pubDate.slice(0,10)}</p>
-<p>Written by {frontmatter.author}</p>
-<hr class=solid style="border-top: 3px solid" >
-<slot />
-<hr class=solid style="border-top: 3px solid" >
-    <div class="tags">
-        {frontmatter.tags.map((tag)=>(
-        <p class="tag"><a href=`/tags/${tag}`>{tag}</a></p>
-        ))}
+    <img src={frontmatter.image.url}>
+    <div class="md-content" >
+        <div
+            class="frontmatter">
+            <p>Published on: {frontmatter.pubDate.slice(0,10)}</p>
+            <p>Written by {frontmatter.author}</p>
+        </div>
+        <hr class=solid style="border-top: 3px solid" >
+        <slot />
+        <hr class=solid style="border-top: 3px solid" >
+            <div class="tags">
+                {frontmatter.tags.map((tag)=>(
+                <p class="tag"><a href=`/tags/${tag}`>{tag}</a></p>
+                ))}
+        
+            </div>
     </div>
-</div>
+<script src="https://utteranc.es/client.js"
+        repo="nwpulverizer/utterances-component"
+        issue-term="pathname"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
 </BaseLayout>
 <style>
+img {
+    width: 10%;
+    text-align: center;
+}
   a {
     color: #8087a2;
 ;
@@ -26,7 +43,8 @@ const {frontmatter} = Astro.props;
   .tags {
     display: flex; 
     flex-wrap: wrap; 
-    margin: 0 auto;  
+    align-items:center;
+    justify-content:flex-start;
   }
 
   .tag {
@@ -35,9 +53,9 @@ const {frontmatter} = Astro.props;
     padding: .5em 1em;
     font-size: 1.15em;
     background-color: #74c7ec;
-
- .tag a:visited{
-    color: black;
 }
-  }
+.frontmatter {
+    
+}
+  
 </style>
