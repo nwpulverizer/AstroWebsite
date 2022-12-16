@@ -1,0 +1,16 @@
+---
+import BlogPost from "../layouts/BlogPost.astro";
+const allPosts = await Astro.glob('../pages/posts/*.md');
+---
+        <h3>Recent Posts</h3>
+        <p>Here you can find all of the posts I have written, from the time I started making this website with the Astro tutorial</p>
+        <div class="posts-container">
+            {allPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} img={post.frontmatter.image.url} date={post.frontmatter.pubDate}/>)}
+        </div>
+        <style>
+    .posts-container {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 1em;
+        }
+        </style>

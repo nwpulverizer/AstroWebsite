@@ -1,4 +1,17 @@
+--- 
+const {title, url, img, date}= Astro.props
 ---
-const {title, url}= Astro.props
----
-<li><a class="post" href={url}>{title}</a></li>
+<div><a class="post" href={url}>{title} <img src={img}> </a>
+<time>{date}</time>
+</div>
+
+    <style>
+        .post img {
+            width: 18em;
+            display: block;
+        }
+        .post {
+            flex-basis: 50%;
+            flex-shrink: 1;
+}
+    </style>
