@@ -6,7 +6,7 @@ description: My thoughts on Astro for making my first website
 image:
   url: "https://astro.build/assets/blog/astro-showcase/astro-showcase-screenshot.jpg"
   alt: "Thumbnails of websites from the Astro Showcase site."
-pubDate: 2022-17-11
+pubDate: 2022-11-11
 tags:
   ["astro", "blogging", "learning in public", "website", "thoughts", "coding"]
 ---
