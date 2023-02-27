@@ -14,7 +14,7 @@
     "@astrojs/preact": "^1.2.0",
     "@astrojs/rss": "^1.0.3",
     "astro": "^1.6.10",
-    "preact": "^10.11.3",
+    "preact": "^10.12.0",
     "rehype-katex": "^6.0.2",
     "remark-math": "^5.1.1",
     "utterances-react-component": "^1.0.0"
