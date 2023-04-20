@@ -17,8 +17,8 @@ function sortDates(...posts: MarkdownInstance<Frontmatter>[][]): MarkDownInstanc
             tutorial</p>
         <div class="posts-container">
             {sorted_posts.map((post) =>
-            <BlogPost url={post.url} title={post.frontmatter.title} img={post.frontmatter.image.url} date={Date(
-                post.frontmatter.pubDate.slice(0, 10))} class="grid-item" />)}
+            <BlogPost url={post.url} title={post.frontmatter.title} img={post.frontmatter.image.url} date={
+                post.frontmatter.pubDate.slice(0, 10)} class="grid-item" />)}
         </div>
         <style>
             .posts-container {

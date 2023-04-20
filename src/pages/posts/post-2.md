@@ -4,7 +4,7 @@ title: What I think of Astro so far
 author: Nathan Pulver
 description: My thoughts on Astro for making my first website
 image:
-  url: "https://astro.build/assets/blog/astro-showcase/astro-showcase-screenshot.jpg"
+  url: "https://astro.build/assets/wallpapers/desktop/rays.png"
   alt: "Thumbnails of websites from the Astro Showcase site."
 pubDate: 2022-11-11
 tags:
