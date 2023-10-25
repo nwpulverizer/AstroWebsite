@@ -10,6 +10,8 @@ image:
 tags: ["blogging", "academics", "learning in public"]
 ---
 
+This article is mostly for myself and will be short and to the point. TLDR: I need to write more.
+
 # Deliberate practice
 
 As a graduate student, a large part of my job is writing. I can't say I am particularly good at it. I have avoided it my whole academic career up until this point. I have written papers for classes and have a few non-first author publications to my name but that is about it. I intend to use my writing on my website as intentional practice for my scientific writing. I am spread thin now to say the least, but I need the practice. This post is a public commitment to publishing an article once a week. If for whatever reason you are browsing this website, and you do not see a post from me, pester me in the comments. I use something called utterances for comments, which requires a GitHub account. If you do not have one, it's not complicated to sign in with Google.
