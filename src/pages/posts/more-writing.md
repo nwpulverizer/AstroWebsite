@@ -10,6 +10,12 @@ image:
 tags: ["blogging", "academics", "learning in public"]
 ---
 
+<!--toc:start-->
+
+- [Deliberate practice](#deliberate-practice)
+- [Potential topics](#potential-topics)
+<!--toc:end-->
+
 This article is mostly for myself and will be short and to the point. TLDR: I need to write more.
 
 # Deliberate practice
