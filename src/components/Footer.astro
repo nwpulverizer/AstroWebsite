@@ -8,9 +8,22 @@ import Social from './Social.astro'
     margin-top: 2rem;
   }
 
+  .social-link {
+    padding: 0.5rem 1rem;
+    color:##fab387;
+    background-color:#9399b2 	;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+  }
+.social-link:visited {
+
+    color:##fab387;
+    background-color:#9399b2 	;
+}
 </style>
 <footer>
-    <Social platform = "twitter" username="astrodotbuild" />
+    <a class="social-link" href="https://knowyourmeme.com/photos/2180439-twitter-x">twitter</a>
     <Social platform="github" username="nwpulverizer" />
     <Social platform="youtube" username="@buildcrashfix8990" />
 </footer>
