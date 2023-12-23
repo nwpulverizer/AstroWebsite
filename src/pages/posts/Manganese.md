@@ -52,3 +52,8 @@ According to a recent study by Hobbs et al, the reason for this strange structur
 As we can see, Manganese is quite strange. I think there is still a lot of interesting questions to ask here. The main study by Hobbs et al that I highlighted is a computational one so it must be confirmed by experimental results. With the complex magnetic and electronic structure Mn exhibits, it may be interesting to see if it forms an electride at certain pressures and temperatures. The authors mention that the $\alpha$-Mn phase is equivalent at least topologically to the $\chi$ intermetallic phase but it is not clear to me if by mentioning that they think Mn exists in different valence states within the unit cell (Mn+1, Mn+3 etc.)or if it is just an interesting comparison. I am working on processing some experimental data of X-ray diffraction of Mn at elevated pressures and temperatures. To my knowledge, there are no studies of Mn at high temperatures above 4 GPa so there could be some interesting results in the data set.
 
 ## Sources
+
+1. [msestudent.com](msestudent.com) - Mostly for the second figure in this article
+2. [Wikipedia](wikiepedia.org) - verified the structures of transition metals
+3. [New description of metastable hcp phase for unaries Fe and Mn: Coupling between first-principles calculations and CALPHAD modeling, Bigdeli et al](https://doi.org/10.1002/pssb.201600096)
+4. [Understanding the complex metallic element Mn. I. Crystalline and noncollinear magnetic structure of α-Mn](https://doi.org/10.1103/physrevb.68.014407)
