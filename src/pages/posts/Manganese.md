@@ -38,6 +38,7 @@ The vast majority of metals organize themselves in 3 ways: a body centered cubic
   <img src="https://msestudent.com/wp-content/uploads/2021/11/bcc-fcc-hcp-elements.svg" style="width:60%;">
   <figcaption style="font-style:italic; font-size:.7em;">A fantastic diagram of the structures mentioned above courtesy of <a href="https://msestudent.com">msestudent.com</a>. Check out their website for further reading on these structures.</figcaption>
   </figure>
+
 ## Introduction to Manganese
 
 The 25th element Manganese, just to the left of Iron, is a 3d5 transition metal. Transition metals are defined by their d orbital valence shell. There are 5 spots that can be filled in these orbitals, each spot can host two electrons, but they have to have opposite spins if they decide to share a spot. For most materials at ambient conditions, it turns out to be much easier to first put one electron in each spot, then if we want to take more electrons, we can start sharing orbitals but this isn't as favorable energetically. In regards to Mn, 3d-5 means there are 5 electrons, so 1 in each electron parking spot and not sharing with anyone.
