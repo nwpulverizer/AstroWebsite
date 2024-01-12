@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: "LazyVim swapping lines after pressing escape key"
 pubDate: 2024-01-12
-description: "This is the first post of my new Astro blog."
+description: "A quick note on a LazyVim and tmux bug"
 author: "Nathan Pulver"
 image:
   url: "https://media.gcflearnfree.org/content/5e31ca08bc7eff08e4063776_01_29_2020/ProgrammingIllustration.png"
