@@ -5,7 +5,7 @@ pubDate: 2024-01-12
 description: "A quick note on a LazyVim and tmux bug"
 author: "Nathan Pulver"
 image:
-  url: "https://media.gcflearnfree.org/content/5e31ca08bc7eff08e4063776_01_29_2020/ProgrammingIllustration.png"
+  url: "https://user-images.githubusercontent.com/292349/213446185-2db63fd5-8c84-459c-9f04-e286382d6e80.png"
   alt: "LazyVim Logo"
 tags: ["blogging", "coding", "learning in public", "linux", "neovim"]
 ---
