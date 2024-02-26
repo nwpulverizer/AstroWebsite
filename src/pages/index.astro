@@ -1,11 +1,23 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Greeting from "../components/Greeting.jsx"
-import Blog from "../components/Blog.astro"
-const pageTitle = "Welcome to my blog"
+import Blog from "../components/Blog.astro";
+const pageTitle = "Welcome to my blog";
 ---
+
 <BaseLayout pageTitle={pageTitle}>
-    <Greeting client:load messages = {["Hello", "Howdy", "How are ya", "Hey", "Hola"]}/>
-    <p>This blog is about all the things I am interested in. I have a wide variety of hobbies from arduino and electronics to rock climbing and camping. Check out the about page to learn a bit more about me.</p>
-    <Blog/  >
+  <p>
+    This blog is about all the things I am interested in. I have a wide variety
+    of hobbies from arduino and electronics to rock climbing and camping. Check
+    out the about page to learn a bit more about me.
+  </p>
+  <div align="center">
+    <a href="https://www.free-website-hit-counter.com"
+      ><img
+        src="https://www.free-website-hit-counter.com/c.php?d=9&id=163560&s=55"
+        border="0"
+      />
+    </a><br />
+    <p>A hit counter!</p>
+  </div>
+  <Blog />
 </BaseLayout>
