@@ -12,5 +12,5 @@ Below is things I know need fixing. My priority as of 10/23/2023 is simply writi
 - [ ] Fix image on article "Hosting an astro website on Hostinger"
 - [ ] Social links - These look bad and some don't even link to me like the twitter one. Remove completely since I don't have many socials or update.
 - [ ] Update about page. It's just a wall of text and not any fun.
-- [ ] Update all images in public to be astro <Image> tags instead.
+- [ ] Update all images in public to be astro <Image> tags instead. Consider removing images altogether at least from home page. 
 - [ ] Redo hostinger article because my answer is really a cop out. 
