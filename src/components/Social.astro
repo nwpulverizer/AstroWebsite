@@ -1,19 +1,16 @@
 ---
-const {platform, username} = Astro.props;
+const { platform, username } = Astro.props;
 ---
-<a class="social-link" href="https://knowyourmeme.com/photos/2180439-twitter-x">{platform}</a>
+
+<a class="social-link" href="https://knowyourmeme.com/photos/2180439-twitter-x"
+  >{platform}</a
+>
 <style>
   .social-link {
     padding: 0.5rem 1rem;
-    color:##fab387;
-    background-color:#9399b2 	;
+    background-color: #f4dbd6;
     text-decoration: none;
     border-radius: 10px;
     text-align: center;
   }
-.social-link:visited {
-
-    color:##fab387;
-    background-color:#9399b2 	;
-}
 </style>
