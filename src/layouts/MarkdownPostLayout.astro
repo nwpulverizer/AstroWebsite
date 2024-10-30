@@ -5,7 +5,6 @@ const {frontmatter} = Astro.props;
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
-    <img src={frontmatter.image.url}>
     <div class="md-content" >
         <div
             class="frontmatter">
@@ -31,10 +30,6 @@ const {frontmatter} = Astro.props;
 </script>
 </BaseLayout>
 <style>
-img {
-    width: 40em;
-    text-align: center;
-}
   a {
     color: #8087a2;
 ;
