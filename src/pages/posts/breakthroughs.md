@@ -5,6 +5,9 @@ pubDate: 2024-06-17
 description: "Ideas don't come from nowhere."
 author: "Nathan"
 tags: ["blogging", "academics", "learning in public"]
+image:
+  url: "https://plus.unsplash.com/premium_photo-1681488007344-c75b0cf8b0cd?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  alt: "lightbulb brain"
 ---
 
 If you follow the news, you might think that new technologies come in bursts, when entrepreneurs or scientist have some sort of breakthrough one day. This could not be further from the truth. Look a little bit closer and you will find that all "breakthroughs" are
