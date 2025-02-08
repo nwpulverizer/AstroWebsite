@@ -4,7 +4,7 @@ title: "To E-bike manufacturers"
 pubDate: 2025-02-08
 description: "Why are you like this?"
 author: "Nathan"
-tags: ["blogging", "outdoors", "dumbass", ""]
+tags: ["blogging", "outdoors", "dumbass"]
 image:
   url: "https://plus.unsplash.com/premium_photo-1681488007344-c75b0cf8b0cd?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   alt: "lightbulb brain"
