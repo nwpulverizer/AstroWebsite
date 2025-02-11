@@ -3,41 +3,41 @@ import { MarkdownInstance } from "astro";
 import BlogPost from "../layouts/BlogPost.astro";
 const allPosts = await Astro.glob("../pages/posts/*.md");
 function sortDates(
-    ...posts: MarkdownInstance<Frontmatter>[][]
+  ...posts: MarkdownInstance<Frontmatter>[][]
 ): MarkDownInstance<FrontMatter>[] {
-    return posts.flat().sort((a, b) => {
-        const aDate = a.frontmatter.pubDate || 0;
-        const bDate = b.frontmatter.pubDate || 0;
-        return (
-            (typeof bDate === "string" ? Date.parse(bDate) : bDate.valueOf()) -
-            (typeof aDate === "string" ? Date.parse(aDate) : aDate.valueOf())
-        );
-    });
+  return posts.flat().sort((a, b) => {
+    const aDate = a.frontmatter.pubDate || 0;
+    const bDate = b.frontmatter.pubDate || 0;
+    return (
+      (typeof bDate === "string" ? Date.parse(bDate) : bDate.valueOf()) -
+      (typeof aDate === "string" ? Date.parse(aDate) : aDate.valueOf())
+    );
+  });
 }
 const sorted_posts = sortDates(allPosts);
 ---
 
 <h3>Recent Posts</h3>
 <p>
-    Here you can find all of the posts I have written, from the time I started
-    making this website with the Astro tutorial
+  Here you can find all of the posts I have written, from the time I started
+  making this website with the Astro tutorial
 </p>
 <div class="posts-container">
-    {
-        sorted_posts.map((post) => (
-            <BlogPost
-                url={post.url}
-                title={post.frontmatter.title}
-                date={post.frontmatter.pubDate.slice(0, 10)}
-                class="grid-item"
-            />
-        ))
-    }
+  {
+    sorted_posts.map((post) => (
+      <BlogPost
+        url={post.url}
+        title={post.frontmatter.title}
+        date={post.frontmatter.pubDate.slice(0, 10)}
+        class="grid-item"
+      />
+    ))
+  }
 </div>
 <style>
-    .posts-container {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        gap: 1.5em;
-    }
+  .posts-container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1.5em;
+  }
 </style>

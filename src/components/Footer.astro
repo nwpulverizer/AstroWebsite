@@ -1,6 +1,7 @@
 ---
-import Social from './Social.astro'
+import Social from "./Social.astro";
 ---
+
 <style>
   footer {
     display: flex;
@@ -10,21 +11,18 @@ import Social from './Social.astro'
 
   .social-link {
     padding: 0.5rem 1rem;
-    color:##fab387;
-    background-color:#9399b2 	;
+    color: ##fab387;
+    background-color: #9399b2;
     text-decoration: none;
     border-radius: 10px;
     text-align: center;
   }
-.social-link:visited {
-
-    color:##fab387;
-    background-color:#9399b2 	;
-}
+  .social-link:visited {
+    color: ##fab387;
+    background-color: #9399b2;
+  }
 </style>
 <footer>
-    <a class="social-link" href="https://knowyourmeme.com/photos/2180439-twitter-x">twitter</a>
-    <Social platform="github" username="nwpulverizer" />
-    <Social platform="youtube" username="@buildcrashfix8990" />
+  <a class="social-link" href="/rss.xml">rss</a>
+  <Social platform="github" username="nwpulverizer" />
 </footer>
-
