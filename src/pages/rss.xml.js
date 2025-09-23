@@ -1,10 +1,10 @@
-import rss from "@astrojs/rss";
+import rss, { pagesGlobToRssItems } from "@astrojs/rss";
 
-export const get = () =>
+export const GET = async () =>
   rss({
     title: "Nathan's Hobbies | Blog",
     description: "A blog from a dude bein",
     site: "https://nathanshobbies.com",
-    items: import.meta.glob("./**/*.md"),
+    items: await pagesGlobToRssItems(import.meta.glob("./**/*.md")),
     customData: `<language>en-us</language>`,
   });
