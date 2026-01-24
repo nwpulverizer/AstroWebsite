@@ -33,7 +33,7 @@ lockup but I still had disconnects. So this kinda fixed it. But it was just anot
 
 ## Fix attempt 2
 
-The real fix I think was to increase the pi's swap and use zswap-tools for compression. If you're unaware, to put it simply swap extends the RAM space by making a little reserved spot on the SD card or whatever disk you have. Zswap in particular adds an additional layer of compression to the swap so whatever you have in there takes up less space. I got this idea from [this voron post](https://forum.vorondesign.com/threads/random-halts-freezes-of-klipper-rpi-software-hardware.2148/). Ignore the guy that said his 64-bit OS was the problem - I really don't think that was it. The 3B+ is 64 bit. Just to have another record of the exact steps to take:
+The real fix I think was to increase the pi's swap and use zswap-tools for compression. If you're unaware, to put it simply swap extends the RAM space by making a little reserved spot on the SD card or whatever disk you have. Zswap makes a little section of RAM compressed data so it is faster than going to a swap file like above but a bit slower than normal ram because it has to decompress it. I got this idea from [this voron post](https://forum.vorondesign.com/threads/random-halts-freezes-of-klipper-rpi-software-hardware.2148/). Ignore the guy that said his 64-bit OS was the problem - I really don't think that was it. The 3B+ is 64 bit. Just to have another record of the exact steps to take:
 
 ```bash
 # Install ZRAM
