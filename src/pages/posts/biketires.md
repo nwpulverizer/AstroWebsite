@@ -12,8 +12,11 @@ I just got a gravel bike. It is pretty fun - a Primos Dame. It comes stock with 
 I wanted to see what sort of tires I could get on my bike so I went searching. Wow does the search on retailers website suck. You would think that 
 you could filter first by wheel size, then by tire width. This is sometimes the case, but not usually. Even then, every time I had one where I could filter by wheel size, there was no **range** filter for tire width. By this I mean, I can filter by 650B (sometimes) but then I have check boxes to select individual widths. Why would I want that? Surely I am not the only one that has a rough range of widths I am interested in. I want a tire in the range of 40 to 55mm wide. To exascerbate this, 650b is also 27.5 and many many retailers will have them as separate listings. So I have to search 650b, then 27.5, checking every width I am interested in before I can see all the tires that might suit me. Manufactureres websites aren't better, in fact they are usually worse. 
 
-So i tried to make my own tool for this.. 
-# [biketirefinder.xyz](biketirefinder.xyz) 
+So i tried to make my own tool for this..
+
+
+# I made a website.. 
+[biketirefinder.xyz](https://biketirefinder.xyz/)
 so i scraped a bunch of websites and got a bunch of tires in a database. I have tried to be as comprehensive as possible but some manufacturers don't really like scrapers. If I list all the tires I have over 1000 entries, but there are duplicates because there is one entry per tire size and a specific tire might come in many sizes so it is probably more like half of that or 1/3 of that. 
 
 I can now sort tires by wheel size, then a range of widths. The wheel sizes are not duplicated (i.e. 27.5 is converted to 650b, 29 to 700c) I can't beleive I had to make this myself. Fix your fucking filters. 
