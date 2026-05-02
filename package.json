@@ -16,7 +16,7 @@
   "dependencies": {
     "@astrojs/preact": "^4.1.1",
     "@astrojs/rss": "^4.0.12",
-    "astro": "^5.13.10",
+    "astro": "^6.1.6",
     "preact": "^10.26.1",
     "rehype-katex": "^7.0.1",
     "remark": "^15.0.1",
